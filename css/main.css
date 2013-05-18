@@ -1,0 +1,90 @@
+* { margin:0;padding:0; }
+body { background:#efefef url(/images/bg-body.jpg) repeat;color:#000;font:16px 'Oswald', sans-serif; }
+h1 { color:#000;font:38px/38px 'Oswald', sans-serif;margin-bottom:20px; }
+h2 { color:#221d1d;font:30px/30px 'Oswald', sans-serif;margin-bottom:10px; }
+h3 { color:#221d1d;font:28px/28px 'Oswald', sans-serif;margin-bottom:10px; }
+h4 { color:#221d1d;font:26px/26px 'Oswald', sans-serif;margin-bottom:10px; }
+h5 { color:#221d1d;font:24px/24px 'Oswald', sans-serif;margin-bottom:10px; }
+h6 { color:#221d1d;font:22px/22px 'Oswald', sans-serif;margin-bottom:10px; }
+p { font:16px 'Oswald', sans-serif;margin-bottom:10px; }
+a { color:#091478;text-decoration:none; }
+a:hover { }
+#wrapper { margin:0 auto;width:1000px; }
+#main-header { margin:20px 0; }
+#branding { height:130px;margin:0 auto;width:255px; }
+#branding a { background:url(/images/derecha-trucks.png) no-repeat;display:block;height:130px;outline:0;text-indent:-9999px; }
+#main-nav { background:#69bd45;border-radius:5px;margin-bottom:30px;position:relative; }
+#main-nav ul { list-style:none; }
+#main-nav .first a { border-radius:5px 0 0 5px; }
+#main-nav > ul > li { float:left; }
+#main-nav > ul > li > a { color:#fff;display:block;font:16px/54px 'Oswald', sans-serif;padding:0 40px;text-decoration:none;text-transform:uppercase; }
+#main-nav .current a,
+#main-nav > ul > li > a:hover { background:#59595b; }
+#main-nav .dropdown { position:relative; }
+#main-nav .dropdown:hover ul { display:block; }
+#main-nav > ul > li > ul { background:#59595b;border-radius:0 0 5px 5px;display:none;position:absolute;width:100%; }
+#main-nav > ul > li > ul > li > a { color:#fff;display:block;font:12px/12px 'Oswald', sans-serif;padding:9px 40px; }
+#main-nav > ul > li > ul > li > a:hover { background:#939699; }
+#main-nav .social { position:absolute;top:9px; } 
+#main-nav .facebook { right:102px; }
+#main-nav .twitter { right:61px; }
+#main-nav .youtube { right:20px; }
+#main-nav .social a { height:36px;padding:0;text-indent:-9999px;width:36px; }
+#main-nav .social a:hover { transform:rotate(45deg); }
+#main-nav .facebook a { background:url(/images/facebook.png) no-repeat!important; }
+#main-nav .twitter a { background:url(/images/twitter.png) no-repeat!important; }
+#main-nav .youtube a { background:url(/images/youtube.png) no-repeat!important; }
+
+#banner {
+	overflow:hidden;
+	width:1000px;
+	margin:0px auto;
+	padding:30px 0;
+	border-top:1px solid #D4D4D4;
+	border-bottom:1px solid #D4D4D4;
+        margin-bottom:20px;
+}
+
+
+#articles-stream article .slave-column-one { width:320px; }
+#articles-stream article .slave-column-one img { max-width:320px; }
+#articles-stream article .slave-column-two { width:640px; }
+
+article { border-top:1px solid #d4d4d4;padding:20px 0; }
+article .slave-column-one { width:490px; }
+article .slave-column-two { width:490px; }
+
+
+#article-details { margin-bottom:10px;width:100%; }
+#article-details th { text-align:left;width:30%; }
+
+#article-form .form-text { width:476px; }
+#article-form .form-textarea { width:476px; }
+#article-form .form-error { width:478px; }
+
+#contact-form .form-text { width:486px; }
+#contact-form .form-textarea { width:986px; }
+#contact-form .form-error { width:488px; }
+
+#main-footer { border-top:1px solid #D4D4D4;padding:40px 0 15px 0; }
+#main-footer p { color:#000;padding-top:20px;text-align:center; }
+
+
+.form-item { margin-bottom:10px; }
+.form-item label { display:block;margin-bottom:5px; }
+.form-text { border:1px solid #000;font:16px/16px helvetica, sans-serif;padding:6px; }
+.form-textarea { border:1px solid #000;font:16px/16px helvetica, sans-serif;padding:6px;resize:vertical; }
+.form-text:focus,
+.form-textarea:focus { border:1px solid #69bd45;box-shadow:0 0 5px #69bd45; }
+.apple,
+.form-button { background:#69bd45;border:0;border-radius:10px 0 10px 0;display:inline-block;cursor:pointer;color:#fff;font-size:20px;padding:10px 25px; }
+.form-error { background:#ffcfcf;border:1px solid #e5a3a3;color:#801B1B;font:12px/24px helvetica, sans-serif;margin-top:5px;padding:5px; }
+
+.group:before,
+.group:after { content:" ";display:table; }
+.group:after { clear:both; }
+.group { *zoom: 1; }
+.master {  }
+.slave-column-one { float:left; }
+.slave-column-two { float:right; }
+.success { background:#dff0d8;border:1px solid #d6e9c6;color:#468847;font:14px/20px 'Oswald', sans-serif;padding:8px 14px;margin-bottom:10px; }
