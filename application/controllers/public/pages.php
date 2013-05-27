@@ -6,7 +6,7 @@
 
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Statics extends CI_Controller
+class Pages extends CI_Controller
 {
     public function __construct()
     {
@@ -23,7 +23,7 @@ class Statics extends CI_Controller
         $arCategories = CategoriesHelper::getCategoriesTree( $arCategories );
         $arCategories = CategoriesHelper::getCategoriesLeveled( $arCategories );
         
-        $this->load->view( 'public/statics/about', array(
+        $this->load->view( 'public/pages/about', array(
             'arCategories' => $arCategories,
             'sTitle' => 'Derecha Trucks | Quienes somos'
         ) );
@@ -68,7 +68,7 @@ class Statics extends CI_Controller
             }
         }
         
-        $this->load->view( 'public/statics/contact', array(
+        $this->load->view( 'public/pages/contact', array(
             'arCategories' => $arCategories,
             'bSent' => $bSent,
             'sTitle' => 'Derecha Trucks | Contacto'
@@ -76,5 +76,5 @@ class Statics extends CI_Controller
     }
 }
 
-/* End of file statics.php */
-/* Location: ./application/controllers/statics.php */
+/* End of file pages.php */
+/* Location: ./application/controllers/pages.php */

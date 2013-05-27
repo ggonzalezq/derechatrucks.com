@@ -40,7 +40,7 @@ class ArticlesHelper
                 $arArticle['article_brand'],
                 $arArticle['article_model'],
                 $arArticle['article_year'],
-                $sPrice
+                NULL
         );
         
         //article_sleeper

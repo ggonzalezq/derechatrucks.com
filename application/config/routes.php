@@ -40,8 +40,8 @@
 
 $route['default_controller'] = "public/articles";
 $route['404_override'] = '';
-$route['quienes-somos'] = 'public/statics/about';
-$route['contacto'] = 'public/statics/contact';
+$route['quienes-somos'] = 'public/pages/about';
+$route['contacto'] = 'public/pages/contact';
 $route['articulos/(:any)/(:num)'] = "public/articles/article/$1/$2";
 $route['categorias/(:any)/(:num)'] = "public/categories/category/$1/$2";
 //  Articles

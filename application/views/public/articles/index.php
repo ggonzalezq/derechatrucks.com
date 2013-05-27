@@ -1,42 +1,38 @@
 <?php require_once FCPATH . 'application/views/public/templates/header.php'; ?>
-
-<div id="banner">
-    <a href="/contacto"><img src="/uploads/derecha-trucks.png" alt="Venta de tractocamiones y remolques" /></a>
-</div>
-<section id="articles-stream">
-    <h1>Ultimos articulos</h1>
+<section id="main-slider" class="slider-wrapper theme-default">
+    <div id="slider" class="nivoSlider">
+        <a href="/categorias/camiones-varios/2">
+            <img src="/images/camiones-varios.jpg" alt="" />
+        </a>
+        <a href="/categorias/gruas/3">
+            <img src="/images/gruas.jpg" alt="" />
+        </a>
+        <a href="/categorias/maquinaria/4">
+            <img src="/images/maquinaria.jpg" alt="" />
+        </a>
+        <a href="/categorias/pipas/5">
+            <img src="/images/pipas.jpg" alt="" />
+        </a>
+        <a href="/categorias/revolvedoras-de-concreto/6">
+            <img src="/images/revolvedoras-de-concreto.jpg" alt="" />
+        </a>
+        <a href="/categorias/tractocamiones/7">
+            <img src="/images/tractocamiones.jpg" alt="" />
+        </a>
+        <a href="/categorias/volteos/8">
+            <img src="/images/volteos.jpg" alt="" />
+        </a>
+        <a href="/categorias/automoviles/9">
+            <img src="/images/automoviles.jpg" alt="" />
+        </a>
+    </div>
+</section><!--#/main-slider-->
+<h1 class="fern-green">Últimos Artículos</h1>
+<div id="articles-buffer" class="clearfix concrete">
+    <?php $i = 0; ?>
     <?php foreach( $arArticles as $arArticle ): ?>
-    <article class="group">
-        <?php if( isset( $arArticle['picture_id'] ) ): ?>
-        <div class="slave-column-one">
-            <a href="/articulos/<?php echo $arArticle['article_permalink']; ?>/<?php echo $arArticle['article_id']; ?>">
-                <img
-                    src="/uploads/articles/<?php echo $arArticle['article_id']; ?>/small/<?php echo $arArticle['picture_name']; ?>" 
-                    alt="<?php if( $arArticle['picture_alt'] === '' ): ?><?php echo $arArticle['title']; ?><?php else: ?><?php echo $arArticle['picture_alt']; ?><?php endif; ?>" 
-                    title="<?php if( $arArticle['picture_title'] === '' ): ?><?php echo $arArticle['title']; ?><?php else: ?><?php echo $arArticle['picture_title']; ?><?php endif; ?>" 
-                />
-            </a>
-        </div>
-        <div class="slave-column-two">
-            <h2><?php echo $arArticle['title']; ?></h2>
-            <?php if( $arArticle['article_comments'] !== ''): ?>
-            <p><?php echo $arArticle['article_comments']; ?></p>
-            <?php endif; ?>
-            <div>
-                <a href="/articulos/<?php echo $arArticle['article_permalink']; ?>/<?php echo $arArticle['article_id']; ?>" class="apple">Ver detalles</a>
-            </div>
-        </div>
-        <?php else: ?>
-            <h2><?php echo $arArticle['title']; ?></h2>
-            <?php if( $arArticle['article_comments'] !== ''): ?>
-            <p><?php echo $arArticle['article_comments']; ?></p>
-            <?php endif; ?>
-            <div>
-                <a href="/articulos/<?php echo $arArticle['article_permalink']; ?>/<?php echo $arArticle['article_id']; ?>" class="apple">Ver detalles</a>
-            </div>                
-        <?php endif; ?>
-    </article>
+    <?php $i++; ?>
+    <?php require FCPATH . 'application/views/public/templates/article.php'; ?>
     <?php endforeach; ?>
-</section><!--#/articles-stream-->
-
+</div><!--#/articles-buffer-->
 <?php require_once FCPATH . 'application/views/public/templates/footer.php'; ?>
