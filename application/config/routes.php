@@ -68,6 +68,12 @@ $route['admin/pictures/picture-edit/(:num)'] = "admin/pictures/pictureEdit/$1";
 $route['admin/pictures/picture-delete/(:num)'] = "admin/pictures/pictureDelete/$1";
 $route['admin/pictures/picture-preview/(:num)'] = "admin/pictures/picturePreview/$1";
 
+$route['admin/slides/(:num)'] = "admin/slides/index/$1";
+$route['admin/slides/slide-activate/(:num)'] = "admin/slides/slideActivate/$1";
+$route['admin/slides/slide-deactivate/(:num)'] = "admin/slides/slideDeactivate/$1";
+$route['admin/slides/slide-new'] = "admin/slides/slideNew";
+$route['admin/slides/slide-edit/(:num)'] = "admin/slides/slideEdit/$1";
+$route['admin/slides/slide-delete/(:num)'] = "admin/slides/slideDelete/$1";
 
 $route['admin/purchases/(:num)'] = "admin/purchases/index/$1";
 $route['admin/purchases/purchase-new'] = "admin/purchases/purchaseNew";

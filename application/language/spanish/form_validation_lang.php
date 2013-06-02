@@ -4,7 +4,6 @@ $lang['required']			= "El campo %s no puede estar en blanco";
 $lang['isset']				= "The %s field must have a value.";
 $lang['valid_email']		= "Este %s  no es válido";
 $lang['valid_emails']		= "The %s field must contain all valid email addresses.";
-$lang['valid_url']			= "The %s field must contain a valid URL.";
 $lang['valid_ip']			= "The %s field must contain a valid IP.";
 $lang['min_length']			= "El campo %s debe ser de al menos %s caracteres de longitud";
 $lang['max_length']			= "El campo %s no puede superar %s caracteres de longitud";
@@ -24,6 +23,7 @@ $lang['decimal']			= "The %s field must contain a decimal number.";
 $lang['less_than']			= "El campo %s debe contener un número menor que %s";
 $lang['greater_than']		= "El campo %s debe contener un número mayor que %s";
 $lang['valid_telephone']		= "Este %s  no es válido";
+$lang['valid_url']		= "El campo %s debe contener una URL valida";
 
 /* End of file form_validation_lang.php */
 /* Location: ./application/language/spanish/form_validation_lang.php */

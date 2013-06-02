@@ -8,7 +8,7 @@
         <title><?php echo $sTitle; ?></title>
         <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <?php echo link_tag( array( 'rel' => 'stylesheet', 'href' => '/css/normalize.css' ) ) . "\n"; ?>
-        <?php echo link_tag( array( 'rel' => 'stylesheet', 'href' => '/css/main.css?v=1369651006' ) ) . "\n"; ?>
+        <?php echo link_tag( array( 'rel' => 'stylesheet', 'href' => '/css/main.css?v=1369651009' ) ) . "\n"; ?>
         <?php if( defined( 'FRONTPAGE' ) ): ?>
         <?php echo link_tag( array( 'rel' => 'stylesheet', 'href' => '/css/vendor/nivo-slider/themes/default/default.css' ) ) . "\n"; ?>
         <?php echo link_tag( array( 'rel' => 'stylesheet', 'href' => '/css/vendor/nivo-slider/nivo-slider.css' ) ) . "\n"; ?>

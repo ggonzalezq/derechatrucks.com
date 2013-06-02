@@ -15,6 +15,15 @@ class MY_Form_validation extends CI_Form_validation
     {
         return ( ! preg_match( "/^\([0-9]{3}\) [0-9]{3}-[0-9]{4}$/", $sTelephone ) ) ? FALSE : TRUE;
     }
+    /**
+     * Check if is a valid URL
+     * @param   string  $sURL 
+     * @return  boolean
+     */
+    public function valid_url( $sURL )
+    {
+        return ! filter_var( $sURL, FILTER_VALIDATE_URL ) ? FALSE : TRUE;
+    }
     /*
      * Override the generated error message
      * @param   string  $sKey

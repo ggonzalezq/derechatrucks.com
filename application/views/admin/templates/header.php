@@ -33,6 +33,13 @@
                         <li<?php if( defined( 'NEW_ARTICLE' ) ): ?> class="active"<?php endif;?>><a href="/admin/articles/article-new"><i class="icon icon-plus"></i> <span>Agregar artículo</span></a></li>
                     </ul>                                        
                 </li>
+                <li class="submenu<?php if( defined( 'SLIDES' ) ): ?> active open<?php endif;?>">
+                    <a href="/admin/slides"><i class="icon icon-picture"></i> <span>Diapositivas</span></a>
+                    <ul>
+                        <li<?php if( defined( 'ALL_SLIDES' ) ): ?> class="active"<?php endif;?>><a href="/admin/slides"><i class="icon icon-list"></i> <span>Todas las diapositivas</span></a></li>
+                        <li<?php if( defined( 'NEW_SLIDE' ) ): ?> class="active"<?php endif;?>><a href="/admin/slides/slide-new"><i class="icon icon-plus"></i> <span>Agregar diapositiva</span></a></li>
+                    </ul>                                        
+                </li>
                 <li class="submenu<?php if( defined( 'CATEGORIES' ) ): ?> active open<?php endif;?>">
                     <a href="/admin/categories"><i class="icon icon-folder-open"></i> <span>Categorias</span></a>
                     <ul>

@@ -34,15 +34,10 @@
 #customer-author { width:10%; }
 #customer-date { width:10%; }
 
-
-
-
 #customers-buffer dl, 
 #customers-buffer dt,
 #customers-buffer dd { margin:0;padding:0; }
 #customers-buffer dl { font-size:12px; }
-
-
 
 #customers-buffer p { margin:0; }
 
@@ -62,6 +57,12 @@
 #user-email { width:20%; }
 #user-telephone { width:10%; }
 #user-date { width:10%; }
+
+#slide-active { width:3%; }
+#slide-title { width:30%; }
+#slide-picture { width:10%; }
+#slide-anchor { width:45%; }
+#slide-date { width:10%; }
 
 .buffer-options { list-style:none;margin:5px 0 0 0; }
 .buffer-options li { float:left;margin-left:10px; }
