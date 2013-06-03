@@ -190,6 +190,7 @@ class Articles extends CI_Controller
             $arArticle['article_tires'] = $this->input->post( 'article_tires' );
             $arArticle['article_transmission'] = $this->input->post( 'article_transmission' );
             $arArticle['article_ubication'] = $this->input->post( 'article_ubication' );
+            $arArticle['article_video'] = $this->input->post( 'article_video' );
             $arArticle['article_wheels'] = $this->input->post( 'article_wheels' );
             $arArticle['article_year'] = $this->input->post( 'article_year' );
             $arArticle['category_id'] = ( int ) $this->input->post( 'category_id' );
@@ -261,6 +262,7 @@ class Articles extends CI_Controller
         $arArticle['article_tires'] = '';
         $arArticle['article_transmission'] = '';
         $arArticle['article_ubication'] = '';
+        $arArticle['article_video'] = '';
         $arArticle['article_wheels'] = '';
         $arArticle['article_year'] = '';
         $arArticle['category_id'] = 0;
@@ -299,6 +301,7 @@ class Articles extends CI_Controller
             $arArticle['article_tires'] = $this->input->post( 'article_tires' );
             $arArticle['article_transmission'] = $this->input->post( 'article_transmission' );
             $arArticle['article_ubication'] = $this->input->post( 'article_ubication' );
+            $arArticle['article_video'] = $this->input->post( 'article_video' );
             $arArticle['article_wheels'] = $this->input->post( 'article_wheels' );
             $arArticle['article_year'] = $this->input->post( 'article_year' );
             $arArticle['category_id'] = ( int ) $this->input->post( 'category_id' );

@@ -142,6 +142,13 @@
                                 <?php echo form_input( array( 'name' => 'article_transmission', 'maxlength' => 255, 'value' => $arArticle['article_transmission'], 'id' => 'article_transmission' ) ) . "\n"; ?>
                             </div>
                         </div>
+                        <div class="control-group<?php if( form_error( 'article_video' ) ):?> error<?php endif; ?>">
+                            <?php echo form_label( 'YouTube video', 'article_video', array( 'class' => 'control-label' ) ) . "\n"; ?>
+                            <div class="controls">
+                                <?php echo form_input( array( 'name' => 'article_video', 'value' => $arArticle['article_video'], 'id' => 'article_video' ) ) . "\n"; ?>
+                                <?php echo form_error( 'article_video' ) . "\n"; ?>
+                            </div>
+                        </div>
                         <div class="form-actions">
                             <?php echo form_button( array( 'type' => 'submit', 'class' => 'btn btn-primary', 'content' => 'Guardar artículo' ) ) . "\n"; ?>
                             <a href="/admin/articles">Cancelar</a>

@@ -83,6 +83,10 @@ $config['validation'][20]['field'] = 'article_transmission';
 $config['validation'][20]['label'] = 'transmisión';
 $config['validation'][20]['rules'] = 'trim|xss_clean';
 
+$config['validation'][21]['field'] = 'article_video';
+$config['validation'][21]['label'] = 'YouTube video';
+$config['validation'][21]['rules'] = 'trim|xss_clean|valid_url';
+
 
 /* End of file article-edit.php */
 /* Location: ./application/config/admin/articles/article-edit */
