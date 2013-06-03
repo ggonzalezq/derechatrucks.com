@@ -423,64 +423,58 @@ body {
     display:block;
     width:453px;
 }
-
-#banner {
-    margin:0 0 45px 0;
+#contact .master-row-one {
+    margin-bottom:32px;
 }
-#banner img {
+#contact .master-row-one img {
     display:block;
     height:313px;
     width:930px;
 }
-#contact .master-row-one {}
-#contact .master-row-one .master-column-one {
-    width:270px;
+#contact .master-row-two {
+    margin:0 0 10px 0;
 }
-#contact .master-row-one .master-column-two {
-    width:590px;
-}
-#contact .master-row-one .master-column-two .slave-row-one {
+#contact .master-row-three {
     margin:0 0 20px 0;
 }
-#contact .master-row-one .master-column-two .slave-row-one .slave-column-one {
-    margin:0 10px 0 0;
-    width:190px;
+#contact .master-row-three .slave-column-one {
+    margin:0 40px 0 0;
 }
-#contact .master-row-one .master-column-two .slave-row-one .slave-column-two {
+#contact .master-row-three .slave-column-two {
     float:left;
-    margin:0 10px 0 0;
-    width:190px;
 }
-#contact .master-row-one .master-column-two .slave-row-one .slave-column-three{
-    float:left;
-    width:190px;
+#contact .master-row-four {
+    
 }
-#contact .master-row-one .master-column-two .slave-row-two {
-    margin:0 0 20px 0;
+#contact .master-row-four .slave-column-one {
+    width:315px;
 }
-#contact dl {
-    margin:0;
-}
-#contact dt {
-    color:#1c1c1c;
-    font:18px/18px gnuolane,sans-serif;
-    margin:0 0 7px 0;
-}
-#contact dd {
-    color:#4e4e4e;
-    font:14px/14px calibri,sans-serif;
-    margin:0 0 25px 0;
+#contact .master-row-four .slave-column-two {
+    width:578px;
 }
 #contact .success {
     color:#439124;
     font:30px/30px gnuolane,sans-serif;
     margin:0 0 20px 0;
 }
+#contact h2 {
+    color:#1c1c1c;
+    font:18px/18px gnuolane,sans-serif;
+    margin:0 0 7px 0;        
+}
+#contact p {
+    color:#4e4e4e;
+    font:14px/14px calibri,sans-serif;
+    margin:0 0 8px 0;    
+}
 #contact label {
     color:#1c1c1c;
     display:block;
     font:18px/18px gnuolane,sans-serif;
-    margin:0 0 10px 0;
+    margin:0 0 6px 0;
+}
+#contact .form-item {
+    margin:0 0 17px 0;
 }
 #contact .form-text {
     background:#efeeee;
@@ -490,7 +484,7 @@ body {
     font:16px/18px calibri,sans-serif;
     height:32px;
     padding:0 5px;
-    width:178px;
+    width:303px;
 }
 #contact .form-textarea {
     background:#efeeee;
@@ -500,7 +494,7 @@ body {
     font:16px/18px calibri,sans-serif;
     height:100px;
     padding:5px;
-    width:578px;    
+    width:303px;
 }
 #contact .form-submit {
     background:#487e32 url(/images/fern-green.jpg) repeat-x;
@@ -509,12 +503,12 @@ body {
     color:#fff;
     display:inline-block;
     font:24px/40px gnuolane,sans-serif;
-    padding:0 25px;
+    text-align:center;
+    width:150px;
 }
 #contact .form-submit:hover {
     background:#d74508;
 }
-
 #main-footer {
     background:#262626 url(/images/footer.jpg) repeat-x;
     height:133px;
