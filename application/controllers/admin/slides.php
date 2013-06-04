@@ -48,8 +48,13 @@ class Slides extends CI_Controller
         
         define( 'ALL_SLIDES', '' );
         
+        
         $sLike = trim( $this->input->get( 's' ) );
-        $iSlideActive = ( int ) $this->input->get( 'slide_active' );
+        
+        if( isset( $_GET['slide_active'] ) )
+        {
+            $iSlideActive = ( int ) $this->input->get( 'slide_active' );
+        }
         
         $iSlides = $this->oSlides->getCountSlides( $sLike, $iSlideActive );
         

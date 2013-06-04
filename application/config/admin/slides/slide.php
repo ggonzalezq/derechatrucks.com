@@ -27,8 +27,8 @@ $config['upload']['allowed_types'] = 'gif|jpg|jpeg|png';
 $config['upload']['overwrite'] = FALSE;
 $config['upload']['remove_spaces'] = TRUE;
 
-$config['image_manipulation']['width'] = 100;
-$config['image_manipulation']['height'] = 100;
+$config['image_manipulation']['width'] = 460;
+$config['image_manipulation']['height'] = 312;
 
 /* End of file slide.php */
 /* Location: ./application/config/admin/articles/slide.php */

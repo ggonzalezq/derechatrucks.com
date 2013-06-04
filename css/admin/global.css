@@ -58,6 +58,8 @@
 #user-telephone { width:10%; }
 #user-date { width:10%; }
 
+#slides-buffer td img { width:150px; }
+
 #slide-active { width:3%; }
 #slide-title { width:30%; }
 #slide-picture { width:10%; }

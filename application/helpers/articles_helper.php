@@ -64,6 +64,12 @@ class ArticlesHelper
         //article_suspension
         $arArticle['article_suspension'] = $arSuspension[$arArticle['article_suspension']];
         
+        //article_video
+        if( $arArticle['article_video'] !== '')
+        {
+            $arArticle['youtube_id'] = UtilsHelper::getYouTubeId( $arArticle['article_video'] );
+        }
+        
         return $arArticle;
         
     }

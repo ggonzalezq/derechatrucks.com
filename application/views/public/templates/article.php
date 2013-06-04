@@ -1,4 +1,5 @@
 <article class="motor-vehicle-teaser<?php if( $i % 4 === 1 ): ?> first<?php endif; ?>">
+    <?php if( isset( $arArticle['picture_name'] ) ): ?>
     <figure class="motor-vehicle-figure">
         <a href="/articulos/<?php echo $arArticle['article_permalink']; ?>/<?php echo $arArticle['article_id']; ?>">
             <img
@@ -8,6 +9,7 @@
             />
         </a>
     </figure>
+    <?php endif; ?>
     <header class="motor-vehicle-header">
         <h2>
             <a href="/articulos/<?php echo $arArticle['article_permalink']; ?>/<?php echo $arArticle['article_id']; ?>"><?php echo $arArticle['title']; ?></a>

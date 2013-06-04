@@ -140,6 +140,13 @@
     <?php if( sizeof( $arPictures ) ): ?>
     <section class="clearfix master-row-two motor-vehicle-gallery">
         <?php $i = 0; ?>
+        <?php if( isset( $arArticle['youtube_id'] ) ): ?>
+        <?php $i++; ?>
+        <figure class="motor-vehicle-figure motor-vehicle-video first">
+            <figcaption>Youtube</figcaption>
+            <iframe width="422" height="237" src="http://www.youtube.com/embed/<?php echo $arArticle['youtube_id']; ?>" frameborder="0" allowfullscreen></iframe>
+        </figure>
+        <?php endif; ?>
         <?php foreach( $arPictures as $arPicture ): ?>
         <?php $i++; ?>
         <figure class="motor-vehicle-figure<?php if( $i % 2 === 1 ): ?> first<?php endif; ?>">

@@ -19,8 +19,10 @@ class Articles extends CI_Controller
         $this->load->model( 'Article_model', 'oArticles' );
         $this->load->model( 'Category_model', 'oCategories' );
         $this->load->model( 'Picture_model', 'oPictures' );
+        $this->load->model( 'Slide_model', 'oSlides' );
         
         $arArticles = array();
+        $arSlides = array();
         $arCategories = array();
         $arPicture = array();
         
@@ -42,10 +44,12 @@ class Articles extends CI_Controller
         $arCategories = $this->oCategories->getCategories();
         $arCategories = CategoriesHelper::getCategoriesTree( $arCategories );
         $arCategories = CategoriesHelper::getCategoriesLeveled( $arCategories );
+        $arSlides = $this->oSlides->getSlides( 10, 0, NULL, 1 );
         
         $this->load->view( 'public/articles/index', array(
             'arCategories' => $arCategories,
             'arArticles' => $arArticles,
+            'arSlides' => $arSlides,
             'sTitle' => 'Derecha Trucks'
         ) );
     }

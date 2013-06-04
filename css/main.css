@@ -246,19 +246,67 @@ body {
 #main-nav > ul > .social > ul > .facebook > a {
     background:url(/images/facebook.png) no-repeat center center;
 }
-
 #main-content {
     background:#fff;
     border-radius:0 0 5px 5px;
     margin:0 10px 42px 10px;
     padding:25px;
 }
-
-#main-slider .nivoSlider {
+#main-slider {
+    background:url(/images/slider.jpg) no-repeat;
+    border:1px solid #c6c6c6;
+    border-radius:5px;
     box-shadow:none;
-    -webkit-box-shadow:none;
-    -moz-box-shadow:none;
+    height:312px;
+    margin:0 0 20px 0;
+    overflow:hidden;
+    width:928px;
 }
+#slider a {
+    display:block;
+    text-decoration:none;
+}
+#slider figure {
+    position:relative;
+}
+#slider .slide-picture {
+    display:block;
+    max-height:312px;
+    max-width:460px;
+}
+#slider .slide-badge {
+    background:url(/images/offer.png) no-repeat;
+    height:164px;
+    left:0;
+    position:absolute;
+    text-indent:-9999px;
+    top:0;
+    width:196px;
+}
+#slider .slide-title {
+    background:#487e32 url(/images/fern-green.jpg);
+    color:#fff;
+    display:inline-block;
+    font:50px/50px gnuolane,sans-serif;
+    padding:10px;
+    position:absolute;
+    text-align:right;
+    right:0;
+    top:100px;
+    width:405px;
+}
+#main-slider ol {
+    bottom:0;
+}
+#main-slider .flex-control-paging li a {
+    background:#c8c8c8;
+    box-shadow:none;
+}
+#main-slider .flex-control-paging li a.flex-active {
+    background:#3f3f3f;
+}
+
+
 #articles-buffer > .first {
     margin:0;
 }
@@ -415,13 +463,29 @@ body {
 }
 .motor-vehicle-gallery .motor-vehicle-figure {
     float:left;
+    height:342px;
     margin:0 0 20px 20px;
+    overflow:hidden;
     width:455px;
 }
 .motor-vehicle-gallery .motor-vehicle-figure img {
     border:1px solid #d1d1d1;
     display:block;
     width:453px;
+}
+.motor-vehicle-video figcaption {
+    background:#2d2d2d url(/images/mine-shaft.jpg);
+    border-radius:5px 5px 0 0;
+    color:#fff;
+    font:24px/39px gnuolane,sans-serif;
+    text-align:center;
+    width:135px;
+}
+.motor-vehicle-video iframe {
+    background:#2d2d2d url(/images/mine-shaft.jpg);
+    border-radius:0 0 5px 5px;
+    display:block;
+    padding:33px 16px 33px 17px;
 }
 #contact .master-row-one {
     margin-bottom:32px;

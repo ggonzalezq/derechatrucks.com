@@ -143,6 +143,31 @@ class UtilsHelper
         
         return $sLeft . $arWrap[0] . $sRight . $arWrap[1] . $sEllipsis;
     }
+    public static function getYouTubeId( $sURL = NULL )
+    {
+        if( $sURL === NULL )
+        {
+            return FALSE;
+        }
+        
+        $arGetParams = array();
+        $arURLComponents = array();
+        $arURLComponents = parse_url( $sURL );
+        
+        if( ! isset( $arURLComponents['query'] ) )
+        {
+            return FALSE;
+        }
+        
+        parse_str( $arURLComponents['query'], $arGetParams );
+        
+        if( ! isset( $arGetParams['v'] ) )
+        {
+            return FALSE;
+        }
+        
+        return $arGetParams['v'];
+    }
 }
 
 /* End of file utils_helper.php */
