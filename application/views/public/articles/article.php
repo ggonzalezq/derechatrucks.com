@@ -6,6 +6,9 @@
                 <h1 class="title"><?php echo $arArticle['title']; ?></h1>
             </header>
             <p class="motor-vehicle-price"><?php echo $arArticle['article_price']; ?></p>
+            <?php if( $arArticle['article_status'] === '4' ): ?>
+            <p class="motor-vehicle-sold-out"><?php echo strtoupper( $arArticle['article_status_name'] ); ?></p>
+            <?php endif; ?>
             <?php if( $arArticle['article_comments'] ): ?>
             <p class="motor-vehicle-comments"><?php echo $arArticle['article_comments']; ?></p>
             <?php endif; ?>
@@ -16,10 +19,10 @@
                     <td><?php echo $arArticle['article_sku']; ?></td>
                 </tr>
                 <?php endif; ?>
-                <?php if( $arArticle['article_status'] !== '' ): ?>
+                <?php if( $arArticle['article_status_name'] !== '' ): ?>
                 <tr class="motor-vehicle-status">
                     <th>Status</th>
-                    <td><?php echo $arArticle['article_status']; ?></td>
+                    <td><?php echo $arArticle['article_status_name']; ?></td>
                 </tr>
                 <?php endif; ?>
                 <?php if( $arArticle['article_brand'] !== '' ): ?>

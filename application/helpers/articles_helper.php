@@ -60,7 +60,7 @@ class ArticlesHelper
         $arArticle['article_price'] = $sPrice;
         
         //article_status
-        $arArticle['article_status'] = $arStatus[$arArticle['article_status']];
+        $arArticle['article_status_name'] = $arStatus[$arArticle['article_status']];
         //article_suspension
         $arArticle['article_suspension'] = $arSuspension[$arArticle['article_suspension']];
         
@@ -105,8 +105,9 @@ class ArticlesHelper
     {
         return array(
             1 => 'Disponible',
-            2 => 'No disponible',
-            3 => 'Proceso de venta'
+            'No disponible',
+            'Proceso de venta',
+            'Vendido'
         );
     }
     /*

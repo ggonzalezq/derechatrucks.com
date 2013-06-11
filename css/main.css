@@ -335,6 +335,16 @@ body {
     max-height:148px;
     width:197px;
 }
+.motor-vehicle-teaser .motor-vehicle-figure figcaption {
+    background:#cc0509 url(/images/monza.jpg);
+    border-radius:3px 3px 0 0;
+    bottom:1px;
+    color:#fff;
+    font:16px/30px gnuolane,sans-serif;
+    padding:0 10px;
+    position:absolute;
+    right:5px;
+}
 .motor-vehicle-teaser .motor-vehicle-header {
     margin:0 0 4px 0;
 }
@@ -392,11 +402,55 @@ body {
     color:#fff;font:30px/30px gnuolane,sans-serif;margin:0;
 }
 .motor-vehicle .motor-vehicle-price { 
-    color:#fff;font:20px/20px gnuolane,sans-serif;margin:0 0 6px 0;
+    color:#fff;
+    font:20px/20px gnuolane,sans-serif;
+    margin:0 0 6px 0;
+}
+.motor-vehicle .motor-vehicle-sold-out { 
+    background:url(/images/sold-out.png) no-repeat;
+    height:108px;
+    left:369px;
+    margin:0;
+    position:absolute;
+    text-indent:-9999px;
+    top:4px;
+    width:44px;
 }
 .motor-vehicle .motor-vehicle-comments { 
-    color:#fff;font:20px/20px gnuolane,sans-serif;margin:0 0 6px 0;
+    color:#fff;
+    font:14px gnuolane,sans-serif;
+    margin:0 0 6px 0;
 }
+/*
+.motor-vehicle .motor-vehicle-comments {
+    background:#2d2d2d url(/images/mine-shaft.jpg);
+    color:#fff;
+    font:14px "Myriad Pro",sans-serif;
+    left:-63px;
+    margin:0 0 6px 0;
+    padding:14px 63px;
+    position:relative;
+    width:315px;
+}
+.motor-vehicle .motor-vehicle-comments:after {
+    background:url(/images/left-ribbon.png) no-repeat;
+    bottom:-10px;
+    content:"";
+    height:10px;
+    left:0;
+    position:absolute;
+    width:14px;
+}
+.motor-vehicle .motor-vehicle-comments:before {
+    background:url(/images/right-ribbon.png) no-repeat;
+    bottom:-10px;
+    content:"";
+    height:10px;
+    right:0;
+    position:absolute;
+    width:14px;
+}
+*/
 .motor-vehicle table {
     margin:16px 0 0 0;
     width:100%;
@@ -406,6 +460,7 @@ body {
     font:bold 16px/16px calibri,sans-serif;
     padding:0 0 5px 0;
     text-align:left;
+    vertical-align:top;
     width:50%;
 }
 .motor-vehicle td {
@@ -413,6 +468,7 @@ body {
     font:16px/16px calibri,sans-serif;
     padding:0 0 5px 0;
     text-align:left;
+    vertical-align:top;
     width:50%;
 }
 .motor-vehicle .master-row-one .slave-column-two {

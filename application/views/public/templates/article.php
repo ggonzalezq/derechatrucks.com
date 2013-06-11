@@ -8,6 +8,9 @@
                 title="<?php if( $arArticle['picture_title'] === '' ): ?><?php echo $arArticle['title']; ?><?php else: ?><?php echo $arArticle['picture_title']; ?><?php endif; ?>" 
             />
         </a>
+        <?php if( $arArticle['article_status'] === '4' ): ?>
+        <figcaption><?php echo strtoupper( $arArticle['article_status_name'] ); ?></figcaption>
+        <?php endif; ?>
     </figure>
     <?php endif; ?>
     <header class="motor-vehicle-header">
