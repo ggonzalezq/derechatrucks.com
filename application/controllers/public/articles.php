@@ -28,7 +28,7 @@ class Articles extends CI_Controller
         
         define( 'FRONTPAGE', '' );
        
-        $arArticles = $this->oArticles->getAll( TRUE );
+        $arArticles = $this->oArticles->getAll( TRUE, NULL, NULL, NULL, NULL, NULL, 'articles.article_created desc' );
         
         foreach( $arArticles as $k => $v  )
         {

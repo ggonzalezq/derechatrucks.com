@@ -119,7 +119,7 @@ class Article_model extends CI_Model
         
         return $oResult->row_array();
     }
-    public function getByCategoryid( $iCategoryId )
+    public function getByCategoryid( $iCategoryId, $sOrderBy = NULL )
     {
         if( ! is_int( $iCategoryId ) )
         {
@@ -132,6 +132,16 @@ class Article_model extends CI_Model
         $this->db->select( '*' );
         $this->db->from( $this->sTable );
         $this->db->where( array( 'article_active' => 1, 'category_id' => $iCategoryId ) );
+        
+        if( $sOrderBy )
+        {
+            $this->db->order_by( $sOrderBy );
+        }
+        else
+        {
+            $this->db->order_by( 'articles.article_changed', 'desc' );
+        }
+        
         $oResult = $this->db->get();
         
         foreach( $oResult->result_array() as $arArticle )

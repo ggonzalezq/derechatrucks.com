@@ -41,7 +41,7 @@ class Categories extends CI_Controller
             show_404();
         }
         
-        $arArticles = $this->oArticles->getByCategoryId( ( int ) $arCategory['category_id'] );
+        $arArticles = $this->oArticles->getByCategoryId( ( int ) $arCategory['category_id'], 'articles.article_created desc' );
         
         
         foreach( $arArticles as $k => $v  )
