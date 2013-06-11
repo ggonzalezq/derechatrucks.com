@@ -52,7 +52,7 @@
             <?php echo form_close() . "\n"; ?>
         </div>
         <div class="slave-column-two">
-            <iframe width="578" height="418" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Periferico+Sur+Paseo+las+Lomas+hermosillo&amp;aq=&amp;sll=29.109801,-110.960026&amp;sspn=0.061266,0.132093&amp;ie=UTF8&amp;hq=&amp;hnear=Perif%C3%A9rico+Sur,+Las+Lomas,+Hermosillo,+Sonora,+Mexico&amp;ll=29.034687,-110.94753&amp;spn=0.007701,0.016512&amp;t=m&amp;z=14&amp;output=embed"></iframe>
+            <iframe width="578" height="418" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?saddr=29.034325,-110.945402&amp;hl=es&amp;sll=29.034311,-110.945338&amp;sspn=0.002983,0.005681&amp;mra=mift&amp;mrsp=0&amp;sz=18&amp;t=m&amp;ie=UTF8&amp;ll=29.034315,-110.945338&amp;spn=0.003921,0.006191&amp;z=17&amp;output=embed"></iframe>
         </div>
     </div>
 </article>
