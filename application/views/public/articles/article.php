@@ -97,11 +97,6 @@
                     <th>Frenos</th><td><?php echo $arArticle['article_brakes']; ?></td>
                 </tr>
                 <?php endif; ?>
-                <?php if( $arArticle['article_transmission'] !== '' ): ?>
-                <tr class="motor-vehicle-transmission">
-                    <th>Transmisión</th><td><?php echo $arArticle['article_transmission']; ?></td>
-                </tr>
-                <?php endif; ?>
             </table>
         </div>
         <div class="motor-vehicle-contact slave-column-two">

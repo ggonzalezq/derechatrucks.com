@@ -136,13 +136,13 @@ body {
 #main-header #telephone {
     background:url(/images/telephone.png) no-repeat;
     color:#3f3f3f;
-    font:24px/58px gnuolane,sans-serif;
-    height:58px;
-    padding:0 0 0 56px;
+    font:32px/70px gnuolane,sans-serif;
+    height:70px;
+    padding:0 0 0 70px;
     position:absolute;
     top:54px;
     right:79px;
-    width:157px;
+    width:186px;
 }
 #main-nav {
     background:#f8f8f8;
