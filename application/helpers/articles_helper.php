@@ -44,7 +44,7 @@ class ArticlesHelper
         );
         
         //article_sleeper
-        if( $arArticle['article_sleeper'] === '0' )
+        if( $arArticle['article_sleeper'] === '1' )
         {
             $arArticle['article_sleeper'] = 'Si';
         }
