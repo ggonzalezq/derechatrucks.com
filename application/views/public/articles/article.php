@@ -153,11 +153,14 @@
         <?php foreach( $arPictures as $arPicture ): ?>
         <?php $i++; ?>
         <figure class="motor-vehicle-figure<?php if( $i % 2 === 1 ): ?> first<?php endif; ?>">
-                <img
-                    src="/uploads/articles/<?php echo $arArticle['article_id']; ?>/medium/<?php echo $arPicture['picture_name']; ?>" 
-                    alt="<?php if( $arPicture['picture_alt'] === '' ): ?><?php echo $arArticle['title']; ?><?php else: ?><?php echo $arPicture['picture_alt']; ?><?php endif; ?>" 
-                    title="<?php if( $arPicture['picture_title'] === '' ): ?><?php echo $arArticle['title']; ?><?php else: ?><?php echo $arPicture['picture_title']; ?><?php endif; ?>" 
-                />
+            <img
+                src="/uploads/articles/<?php echo $arArticle['article_id']; ?>/medium/<?php echo $arPicture['picture_name']; ?>" 
+                alt="<?php if( $arPicture['picture_alt'] === '' ): ?><?php echo $arArticle['title']; ?><?php else: ?><?php echo $arPicture['picture_alt']; ?><?php endif; ?>" 
+                title="<?php if( $arPicture['picture_title'] === '' ): ?><?php echo $arArticle['title']; ?><?php else: ?><?php echo $arPicture['picture_title']; ?><?php endif; ?>" 
+            />
+            <?php if( $arArticle['article_status'] === '4' ): ?>
+            <figcaption class="sold-out"><?php echo strtoupper( $arArticle['article_status_name'] ); ?></figcaption>
+            <?php endif; ?>
         </figure>
         <?php endforeach; ?>
     </section>

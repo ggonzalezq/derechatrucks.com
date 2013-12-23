@@ -521,6 +521,7 @@ body {
     float:left;
     height:342px;
     margin:0 0 20px 20px;
+    position:relative;
     overflow:hidden;
     width:455px;
 }
@@ -536,6 +537,16 @@ body {
     font:24px/39px gnuolane,sans-serif;
     text-align:center;
     width:135px;
+}
+.motor-vehicle .motor-vehicle-figure .sold-out {
+    background:#cc0509 url(/images/monza.jpg);
+    border-radius:3px 3px 0 0;
+    bottom:1px;
+    color:#fff;
+    font:16px/30px gnuolane,sans-serif;
+    padding:0 10px;
+    position:absolute;
+    right:5px;
 }
 .motor-vehicle-video iframe {
     background:#2d2d2d url(/images/mine-shaft.jpg);
