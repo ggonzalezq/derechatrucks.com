@@ -10,3 +10,24 @@ $( window ).load( function() {
         nextText: "Siguiente" 
     });
 });
+
+$( function(){
+    $( '.print' ).click( function( e ){
+        e.preventDefault();
+        var template = '';
+        var HTML = '';
+        
+        if( ! $( 'body' ).hasClass( 'printing' ) )
+        {
+            template = $( '#print-article' ).html();
+            template = Handlebars.compile( template );
+            HTML = template( {} );
+            $( 'body' ).append( HTML );    
+        }
+        
+        $( 'body' ).addClass( 'printing' );
+        
+        window.print();
+    } );
+} );
+

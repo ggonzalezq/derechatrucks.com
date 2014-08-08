@@ -98,6 +98,9 @@
                 </tr>
                 <?php endif; ?>
             </table>
+            <div>
+                <a href="#/articulos/imprimir/<?php /*echo $sPermalink;*/ ?>/<?php /*echo $iArticleId;*/ ?>" class="print">Imprimir</a>
+            </div>
         </div>
         <div class="motor-vehicle-contact slave-column-two">
             <h2>Contáctanos</h2>
@@ -161,4 +164,132 @@
     </section>
     <?php endif; ?>
 </article>
+<script id="print-article" type="text/x-handlebars-template">
+    <div id="wrapper-2">
+        <header id="main-header-2">
+            <div id="branding-2">
+                <img src="/images/derecha-trucks.png" alt="Derecha trucks" />
+            </div><!--#/branding-2-->
+            <div id="social-2">
+                <ul>
+                    <li class="clearfix">
+                        <div class="pull-left">
+                            <img src="/images/print/facebook.png" alt="" />
+                        </div>
+                        <div class="pull-right">derechatrucks</div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="pull-left">
+                            <img src="/images/print/twitter.png" alt="" />
+                        </div>
+                        <div class="pull-right">derechatrucks</div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="pull-left">
+                            <img src="/images/print/youtube.png" alt="" />
+                        </div>
+                        <div class="pull-right">derechatrucks</div>
+                    </li>
+                </ul>
+            </div><!--#/social-2-->
+            <div id="contact-2">
+                <p>¡Ll&aacute;manos!</p>
+                <div id="telephone-2" class="clearfix">
+                    <p><img src="/images/print/telephone.png" alt="" /> (662) 250 1818</p>
+                </div><!--#/telephone-2-->
+            </div><!--#/contact-2-->
+        </header><!--#/main-header-2-->
+        <section id="main-section-2">
+            <article id="main-article-2" class="clearfix">
+                <div class="pull-left">
+                    <h1><?php echo $arArticle['title']; ?></h1>
+                    <p class="motor-vehicle-price"><?php echo $arArticle['article_price']; ?></p>
+                    <?php if( $arArticle['article_status'] === '4' ): ?>
+                    <p class="motor-vehicle-sold-out"><?php echo strtoupper( $arArticle['article_status_name'] ); ?></p>
+                    <?php endif; ?>
+                    <?php if( $arArticle['article_comments'] ): ?>
+                    <p class="motor-vehicle-comments"><?php echo $arArticle['article_comments']; ?></p>
+                    <?php endif; ?>
+                    <ul>
+                        <?php if( $arArticle['article_sku'] !== '' ): ?>
+                        <li><b>Nº de inventario:</b> <?php echo $arArticle['article_sku']; ?></li>
+                        <?php endif; ?>
+                        <?php if( $arArticle['article_status_name'] !== '' ): ?>
+                        <li><b>Status:</b> <?php echo $arArticle['article_status_name']; ?></li>
+                        <?php endif; ?>
+                        <?php if( $arArticle['article_brand'] !== '' ): ?>
+                        <li><b>Marca:</b> <?php echo $arArticle['article_brand']; ?></li>
+                        <?php endif; ?>
+                        <?php if( $arArticle['article_model'] !== '' ): ?>
+                        <li><b>Modelo:</b> <?php echo $arArticle['article_model']; ?></li>
+                        <?php endif; ?>
+                        <?php if( $arArticle['article_year'] !== '' ): ?>
+                        <li><b>Año:</b> <?php echo $arArticle['article_year']; ?></li>
+                        <?php endif; ?>
+                        <?php if( $arArticle['article_engine'] !== '' ): ?>
+                        <li><b>Motor:</b> <?php echo $arArticle['article_engine']; ?></li>
+                        <?php endif; ?>
+                        <?php if( $arArticle['article_transmission'] !== '' ): ?>
+                        <li><b>Transmisión:</b> <?php echo $arArticle['article_transmission']; ?></li>
+                        <?php endif; ?>
+                        <?php if( $arArticle['article_color'] !== '' ): ?>
+                        <li><b>Color:</b> <?php echo $arArticle['article_color']; ?></li>
+                        <?php endif; ?>
+                        <?php if( $arArticle['article_tires'] !== '' ): ?>
+                        <li><b>Rodado:</b> <?php echo $arArticle['article_tires']; ?></li>
+                        <?php endif; ?>
+                        <?php if( $arArticle['article_wheels'] !== '' ): ?>
+                        <li><b>Rines:</b> <?php echo $arArticle['article_wheels']; ?></li>
+                        <?php endif; ?>
+                        <?php if( $arArticle['article_differential'] !== '' ): ?>
+                        <li><b>Diferencial:</b> <?php echo $arArticle['article_differential']; ?></li>
+                        <?php endif; ?>
+                        <?php if( $arArticle['article_suspension'] !== '' ): ?>
+                        <li><b>Suspensión:</b> <?php echo $arArticle['article_suspension']; ?></li>
+                        <?php endif; ?>
+                        <?php if( $arArticle['article_sleeper'] !== '' ): ?>
+                        <li><b>Camarote:</b> <?php echo $arArticle['article_sleeper']; ?></li>
+                        <?php endif; ?>
+                        <?php if( $arArticle['article_capacity'] !== '' ): ?>
+                        <li><b>Capacidad:</b> <?php echo $arArticle['article_capacity']; ?></li>
+                        <?php endif; ?>
+                        <?php if( $arArticle['article_brakes'] !== '' ): ?>
+                        <li><b>Frenos:</b> <?php echo $arArticle['article_brakes']; ?></li>
+                        <?php endif; ?>
+                    </ul>
+                </div>
+                <?php if( sizeof( $arPictures ) ): ?>
+                <section id="pictures-2" class="pull-right">
+                    <?php if( isset( $arPictures[0] ) ): ?>
+                    <div class="primary-picture">
+                        <img src="/uploads/articles/<?php echo $arArticle['article_id']; ?>/medium/<?php echo $arPictures[0]['picture_name']; ?>" alt=""  />
+                    </div>
+                    <?php endif; ?>
+                    <?php if(   ( isset( $arPictures[1] ) ) ||
+                                ( isset( $arPictures[2] ) ) ): ?>
+                    <div class="clearfix secondary-pictures">
+                        <?php if( isset( $arPictures[1] ) ): ?>
+                        <div class="pull-left">
+                            <img src="/uploads/articles/<?php echo $arArticle['article_id']; ?>/medium/<?php echo $arPictures[1]['picture_name']; ?>" alt=""  />
+                        </div>
+                        <?php endif; ?>
+                        <?php if( isset( $arPictures[2] ) ): ?>
+                        <div class="pull-right">
+                            <img src="/uploads/articles/<?php echo $arArticle['article_id']; ?>/medium/<?php echo $arPictures[2]['picture_name']; ?>" alt=""  />
+                        </div>
+                        <?php endif; ?>
+                    </div>
+                    <?php endif; ?>
+                </section><!--#/pictures-2-->
+                <?php endif; ?>
+            </article><!--#/main-article-2-->
+        </section><!--#/main-section-2-->
+        <footer id="main-footer-2">
+            <p><b>Dirección</b>  Periferico Sur No. 22 Esquina Paseo las Lomas</p>
+            <p>Colonia Las Lomas . C.P. 83293 . Hermosillo, Sonora México</p>
+            <p><b>Email:</b> ventas@derechatrucks.com</p>
+            <p class="copyright">www.derechatrucks.com</p>
+        </footer><!--#/main-footer-2-->
+    </div><!--#/wrapper-2-->
+</script>
 <?php require_once FCPATH . 'application/views/public/templates/footer.php'; ?>

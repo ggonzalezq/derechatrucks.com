@@ -452,7 +452,7 @@ body {
 }
 */
 .motor-vehicle table {
-    margin:16px 0 0 0;
+    margin:20px 0;
     width:100%;
 }
 .motor-vehicle th {
@@ -711,6 +711,9 @@ body {
     text-indent:-9999px;
     width:120px;
 }
+#wrapper-2 {
+    display:none;
+}
 .concrete {
     background:#f3f3f3;
     border-radius:5px;
@@ -725,6 +728,16 @@ body {
     font:24px/40px gnuolane,sans-serif;
     margin:0 0 0 14px;
     padding:0 25px;
+}
+.print {
+    background:#c63b00 url(/images/print.png) no-repeat 10px center;
+    border-radius:10px;
+    color:#fff;
+    display:inline-block;
+    font:bold 14px/40px calibri,sans-serif;
+    outline:0;
+    padding:0 10px 0 45px;
+    text-decoration:none;
 }
 .form-error {
     color:#C63B02;
@@ -755,11 +768,13 @@ body {
     background:#d74508;
 }
 .master-column-one,
-.slave-column-one {
+.slave-column-one,
+.pull-left {
     float:left;
 }
 .master-column-two,
-.slave-column-two {
+.slave-column-two, 
+.pull-right {
     float:right;
 }
 .view-video-youtube{
@@ -769,6 +784,7 @@ body {
     text-indent:-9999px;
     width:25px;
 }
+
 
 /* ==========================================================================
    Helper classes
@@ -892,15 +908,12 @@ body {
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
-
 @media print {
     * {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
@@ -944,7 +957,6 @@ body {
     }
 
     @page {
-        margin: 0.5cm;
     }
 
     p,
@@ -958,4 +970,139 @@ body {
     h3 {
         page-break-after: avoid;
     }
+    .printing #wrapper {
+        display:none;
+    }
+    .printing #main-footer {
+        display:none;
+    }
+    .printing .purechat {
+        display:none;
+    }
+    #wrapper-2 {
+        display:block;
+    }
+    #main-header-2 {
+        height:146px;
+        position:relative;
+    }
+    #branding-2 {
+        left:10px;
+        position:absolute;
+        top:23.5px;
+    }
+    #branding-2 img {
+        display:block;
+        height:99px;
+        width:194px;
+    }
+    #social-2 {
+        bottom:30px;
+        position:absolute;
+        right:190px;
+    }
+    #social-2 ul {
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+    #social-2 li {
+        font:bold 13px/24px calibri,sans-serif;
+        margin:0 0 5px 0;
+    }
+    #social-2 li .pull-left {
+        width:25px;
+    }
+    #contact-2 {
+        bottom:30px;
+        position:absolute;
+        right:0;
+    }
+    #contact-2 p {
+        color:#242425;
+        font:bold 16px/16px calibri,sans-serif;
+        margin:0 0 10px 0;
+        text-align:right;
+    }
+    #telephone-2 p {
+        font:bold 16px/24px calibri,sans-serif;
+        margin:0;
+        padding:0 0 0 28px;
+    }
+    #telephone-2 p img {
+        vertical-align:top;
+    }
+    #main-article-2 {
+        border:1px solid #b7b7b8;
+        border-radius:5px 5px 0 0;
+        padding:20px;
+    }
+
+    #main-article-2 .pull-left {
+        width:46%;
+    }
+    #main-article-2 h1 {
+        color:#6cbe46;
+        font:bold 24px/24px arial,sans-serif;
+        margin:0 0 10px 0;
+    }
+    #main-article-2 p {
+        color:#242425;
+        font:bold 15px/15px arial,sans-serif;
+        margin:0 0 10px 0;
+    }
+    #main-article-2 ul {
+        list-style:none;
+        margin:30px 0 0 0;
+        padding:0;
+    }
+    #main-article-2 li {
+        color:#242425;
+        font:13px/13px arial,sans-serif;
+        margin:0 0 10px 0;
+    }
+    #pictures-2 {
+        width:46%;
+    }
+    #pictures-2 img {
+        display:block;
+    }
+    #pictures-2 .primary-picture {
+        margin:0 0 20px 0;
+    }
+    #pictures-2 .primary-picture img {
+        width:100%;
+    }
+    #pictures-2 .secondary-pictures .pull-left,
+    #pictures-2 .secondary-pictures .pull-right {
+        width:48%;
+    }
+    #pictures-2 .secondary-pictures img {
+        width:100%;
+    }
+    #main-footer-2 {
+        background:#eee!important;
+        border-radius:0 0 5px 5px;
+        padding:20px;
+    }
+    #main-footer-2 p {
+        color:#3f3f3f;
+        font:12px/12px calibri,sans-serif;
+        margin:0 0 10px 0;
+        text-align:center;
+    }
+    #main-footer-2 .copyright {
+        font:17px/17px calibri,sans-serif;
+    }
+
+    @page { 
+        size:landscape;
+        margin:1cm;
+    }
+    @page { 
+        size:portrait;
+        margin:1.5cm 1cm 1cm 1cm;
+    }
+    
+    
 }

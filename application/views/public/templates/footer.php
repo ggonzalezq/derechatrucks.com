@@ -27,17 +27,8 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="/js/vendor/jquery.flexslider-min.js"></script>
+        <script src="/js/vendor/handlebars.js"></script>
         <script src="/js/global.js"></script>
-        <script>
-            var LHCChatOptions = {};
-            LHCChatOptions.opt = {widget_height:340,widget_width:300,popup_height:520,popup_width:500};
-            (function() {
-            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-            var refferer = (document.referrer) ? encodeURIComponent(document.referrer) : '';
-            var location  = (document.location) ? encodeURIComponent(document.location) : '';
-            po.src = '//www.derechatrucks.com/lhc_web/index.php/esp/chat/getstatus/(click)/internal/(position)/bottom_right/(top)/350/(units)/pixels/(department)/1?r='+refferer+'&l='+location;
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-            })();
-        </script>
+        <script>(function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://widget.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({ c: '7544df29-b033-46c6-9191-928e01b07e51', f: true }); done = true; } }; })();</script>
     </body>
 </html>

@@ -1,0 +1,7 @@
+AddHandler x-httpd-php5-cgi .php
+
+Options -Multiviews
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteBase /

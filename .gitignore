@@ -1,2 +1,5 @@
-/nbproject/
-/uploads/
+nbproject
+.errordocs
+uploads
+lhc_web/cache/
+application/config/database.php
