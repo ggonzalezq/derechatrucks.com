@@ -91,6 +91,8 @@ $route['admin/logout'] = 'admin/users/userLogout';
 $route['admin/users/user-new'] = 'admin/users/userNew';
 //$route['admin/users/'] = 'admin/users/userResetPassword';
 
+$route['admin/tools/backup-database'] = 'admin/tools/backupDatabase';
+
 
 
 

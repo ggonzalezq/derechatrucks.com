@@ -71,6 +71,12 @@
                         <li<?php if( defined( 'NEW_USER' ) ): ?> class="active"<?php endif;?>><a href="/admin/users/user-new"><i class="icon icon-plus"></i> <span>Agregar usuario</span></a></li>
                     </ul>                                        
                 </li>
+                <li class="submenu<?php if( defined( 'TOOLS' ) ): ?> active open<?php endif;?>">
+                    <a href="#"><i class="icon icon-wrench"></i> <span>Herramientas</span></a>
+                    <ul>
+                        <li<?php if( defined( 'BACKUP_DATABASE' ) ): ?> class="active"<?php endif;?>><a href="/admin/tools/backup-database"><i class="icon icon-arrow-down"></i> <span>Descargar copia <abbr title="base de datos">bd</abbr></span></a></li>
+                    </ul>                                        
+                </li>
                 <?php endif; ?>
             </ul>
         </div><!--#/sidebar-->
